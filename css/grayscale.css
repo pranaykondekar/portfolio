@@ -263,9 +263,9 @@ a:focus {
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 250px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/resume1.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -390,6 +390,21 @@ body {
     text-align: center;
     color: #fff;
     background: url(../img/me2.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#samples {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 350px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/pfbg1.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

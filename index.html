@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
+
+<link rel="stylesheet" href="css/jqcloud.css">
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,7 +81,7 @@
     <!--Intro Header -->
     <header class="intro">
         <div class="intro-body">
-            <div class="container">
+            <div class="container" id="wordscontainer">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <!--<h1 class="brand-heading">PRANAY KONDEKAR</h1>
@@ -262,15 +264,57 @@
     <!-- plugin for image gallery -->
     <script src="js/jquery.blueimp-gallery.min.js"></script>
     <script src="js/bootstrap-image-gallery.min.js"></script>
-
+    <script src="js/jqcloud.js"></script>
     
     
 
     <!--Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script type="text/javascript">
+
+    var words = [
+      {text: "HTML5", weight: 15},
+      {text: "CSS3", weight: 14},
+      {text: "JavaScript", weight: 15},
+      {text: "jQuery", weight: 12},
+      {text: "Bootstrap", weight: 9},
+      {text: "XML", weight: 11},
+      {text: "JSON", weight: 12},
+      {text: "AJAX", weight: 13},
+      {text: "RWD", weight: 8},
+      {text: "Web 2.0", weight: 10},
+      {text: "AngularJs", weight: 9},
+      {text: "RequireJS", weight: 8},
+      {text: "jQuery UI", weight: 9.5},
+      {text: "Handlebars", weight: 7},
+      {text: "JAVA", weight: 10},
+      {text: "Spring", weight: 7},
+      {text: "Jasmin", weight: 6},
+      {text: "Agile SCRUM", weight: 8},
+      {text: "REST", weight: 13},
+      {text: "JSP", weight: 10},
+      {text: "MongoDB", weight: 8.5},
+      {text: "Flex", weight: 7},
+      {text: "i18n", weight: 10.5},
+      {text: "WAI-ARIA", weight: 9.5},
+      {text: "Fiddler", weight: 5.5},
+      {text: "Dashboards", weight: 6.5}
+
+      /* ... */
+    ];
+
+
+    $("#wordscontainer").jQCloud(words,{
+        
+  colors: ["#800026", "#bd0026", "#e31a1c", "#fc4e2a", "#fd8d3c", "#feb24c", "#fed976", "#ffeda0", "#ffffcc"],
+  fontSize: {
+    from: 0.05,
+    to: 0.01
+  }
+    });
+
     /* Google analytics code */
-    
+        
       
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
